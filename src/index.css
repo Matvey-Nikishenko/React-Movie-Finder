@@ -1,13 +1,134 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  box-sizing: border-box;
+  width: 100vw;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.film-app {
+  width: 1100px;
+}
+
+
+/* Navigation */
+.nav {
+  padding: 10px 15px;
+  display: flex;
+  width: auto;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.nav-link {
+  color: black;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+
+
+.selected {
+  color: palevioletred;
+  border-bottom: 2px solid palevioletred;
+}
+
+
+/* Search Films */
+.SearchForm {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.SearchForm-button {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.SearchForm-input {
+  display: inline-block;
+  width: 300px;
+  font-size: 15px;
+  
+}
+
+/* Film Details */
+
+.btn {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.film-details {
+  padding: 15px;
+}
+
+.film-description {
+  display: flex;
+  width: 1050px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.film {
+  width: 700px;
+}
+
+.film-title {
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.film-about {
+  display: block;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.film-score {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.genre {
+  font-weight: 400;
+}
+
+.cast-row {
+  display: block;
+}
+
+.cast-list-item {
+  margin-bottom: 30px;
+}
+
+.movie-details-link {
+  padding: 15px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.link-info {
+  text-decoration: none;
+  display: block;
 }
